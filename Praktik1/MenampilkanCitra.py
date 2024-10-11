@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 # Membaca citra digital dari direktori
-citra = cv2.imread("Praktik1/Pohon.jpg")
+citra = cv2.imread("asset/Pohon.jpg")
 
 # Menampilkan gambar dari variabel citra
 # cv2.imshow("Pohon", citra)
@@ -38,7 +38,7 @@ red = citra[:,:,2]
 #==== Cara 2 End====#
 
 #==== Cara 3 Start====#
-b,g,r = cv2.split(citra) 
+blue,green,red = cv2.split(citra) 
 gray = cv2.cvtColor(citra,cv2.COLOR_RGB2GRAY)
 #==== Cara 3 End====#
 
