@@ -18,7 +18,7 @@ red = citra[:,:,2]
 
 # Rumus Grayscale 0.299 R + 0.587 G + 0.114 B
 #==== Cara 1 Start ====#
-gray = np.around(0.299*red + 0.587*green + 0.114*blue)
+# gray = np.around(0.299*red + 0.587*green + 0.114*blue)
 
 #==== Cara 1 End ====#
 
@@ -36,6 +36,11 @@ gray = np.around(0.299*red + 0.587*green + 0.114*blue)
 #         gray[b,k] = round(0.299*red[b,k] + 0.587*green[b,k] + 0.114*blue[b,k])
 
 #==== Cara 2 End====#
+
+#==== Cara 3 Start====#
+b,g,r = cv2.split(citra) 
+gray = cv2.cvtColor(citra,cv2.COLOR_RGB2GRAY)
+#==== Cara 3 End====#
 
 # menghilangkan koma
 gray = gray.astype(np.uint8)

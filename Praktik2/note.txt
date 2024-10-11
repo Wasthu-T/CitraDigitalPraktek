@@ -1,0 +1,11 @@
+Histogram warna
+-> Distribusi dari frekuensi warna pada citra digital.
+-> Berguna sebagai mengetahui gambar itu dengan brighness terang(tinggi) atau gelap(rendah) untuk komputer.
+-> brighness = gelap makin terang. terang tambah terang.
+-> Kumpulan piksel semakin banyak disebelah kanan = Terang(High). Histogram (__n)
+-> Kumpulan piksel semakin banyak disebelah kiri = Gelap(Low). Histogram (n__)
+-> contrass = gelap makin gelap dan terang makin terang.
+-> High contrass = kanan dan kiri memiliki perbedaan persebaran yang sama. Histogram (n_n)
+-> Low contrass  = bagian tengah memiliki persebaran seimbang. Histogram (_n_)
+-> Jika RGB akan memiliki 3 histogram warna.
+RGB -> 24 bit = 3 byte
