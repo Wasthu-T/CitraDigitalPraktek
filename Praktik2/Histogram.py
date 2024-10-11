@@ -24,11 +24,11 @@ for i in range(jum_baris) :
 
 # menampilkan histogram
 plt.bar(range(256),hist_gray)
-plt.show()
 
 # tampilkan gray image
 gray = citra_gray.astype(np.uint8)
 cv2.imshow("Pohon - gray", gray)
+plt.show()
 
 # Menunggu user menekan sembarang tombol
 cv2.waitKey()
