@@ -1,4 +1,10 @@
-# Meratakan distribusi histogram Contras
+# Meratakan histogram Contras
+# Rumus equalizized
+# Sk = (L-1) sigma(i=0, sampai k) pi
+# Note : 
+# Sk = Warna baru
+# L = Variasi warna
+# Pi = Probabilitas kemunculan warna
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
