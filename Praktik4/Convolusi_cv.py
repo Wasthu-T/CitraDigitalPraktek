@@ -3,6 +3,8 @@ import numpy as np
 
 citra = cv2.imread("asset/Pohon.jpg")
 citra_rgb = cv2.cvtColor(citra, cv2.COLOR_BGR2RGB)
+# blur
+
 
 # sharpening
 kernel_sharpening1 = np.array(

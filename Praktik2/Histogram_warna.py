@@ -10,12 +10,6 @@ citra = cv2.imread("asset/Pohon1.jpg")
 def histogram_rgb(citra) :
     jum_baris = len(citra)
     jum_kolom = len(citra[0])
-    total_pix = jum_kolom + jum_baris
-
-    # Memisahkan channel
-    blue = citra[:,:,0]
-    green = citra[:,:,1]
-    red = citra[:,:,2]
 
     #inisiasi histogram di setiap channel
     hist_blue = np.zeros(256)
